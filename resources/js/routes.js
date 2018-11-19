@@ -76,6 +76,14 @@ export default [
         component: require('./screens/pages/edit')
     },
 
+    
+    // Settings...
+    {
+        path: '/settings',
+        name: 'settings',
+        component: require('./screens/settings/index')
+    },
+
 
     // Catch All...
     {

@@ -27,8 +27,12 @@ Route::get('/api/pages/{id?}', 'PagesController@show')->name('pages.show');
 Route::post('/api/pages/{id}', 'PagesController@store')->name('pages.store');
 Route::delete('/api/pages/{id}', 'PagesController@delete')->name('pages.delete');
 
+// Imports
+Route::post('/api/imports/wordpress', 'ImportsController@wordpress')->name('imports.wordpress');
+
 // Logout Route...
 Route::get('/logout', 'LoginController@logout')->name('logout');
+
 
 // Catch-all Route...
 Route::get('/{view?}', 'SPAViewController')->name('spa')->where('view', '(.*)');
